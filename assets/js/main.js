@@ -171,6 +171,12 @@ let checkNumber = [
     15,
     78
 ]
-console.log(checkNumber.sort());
-let div3 = checkNumber.filter(z => z % 3 == 0);
-console.log(div3);
+console.log(checkNumber.length)
+
+checkNumber.forEach((elt, index) => {
+    if (elt % 3 == 0) {
+        checkNumber[index] = elt + 100
+    }
+    return elt;
+})
+console.log(checkNumber);
