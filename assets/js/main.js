@@ -179,4 +179,4 @@ checkNumber.forEach((elt, index) => {
     }
     return elt;
 })
-console.log(checkNumber);
+console.log(checkNumber.sort());
